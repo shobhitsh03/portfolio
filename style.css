@@ -118,7 +118,8 @@ body {
     border-radius: 1rem;
 }
 
-.navbar a:hover, .navbar a.active {
+.navbar a:hover,
+.navbar a.active {
     color: var(--main-color);
     background: rgba(0, 240, 255, 0.08);
     border-bottom: 2px solid var(--main-color);
@@ -380,8 +381,15 @@ section {
 }
 
 @keyframes profileFloat {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 .hero-badge {
@@ -401,10 +409,25 @@ section {
     border: 1px solid var(--card-border);
 }
 
-.badge-1 { top: 10%; left: -10%; border-color: var(--main-color); }
-.badge-1 i { color: var(--main-color); }
-.badge-2 { bottom: 10%; right: -5%; border-color: var(--secondary-color); }
-.badge-2 i { color: var(--secondary-color); }
+.badge-1 {
+    top: 10%;
+    left: -10%;
+    border-color: var(--main-color);
+}
+
+.badge-1 i {
+    color: var(--main-color);
+}
+
+.badge-2 {
+    bottom: 10%;
+    right: -5%;
+    border-color: var(--secondary-color);
+}
+
+.badge-2 i {
+    color: var(--secondary-color);
+}
 
 /* ============================================================= */
 /* ============================================================= */
@@ -420,7 +443,8 @@ section {
     width: 100%;
 }
 
-.about-img, .about-content {
+.about-img,
+.about-content {
     position: relative;
     z-index: 2;
 }
@@ -462,8 +486,13 @@ section {
 }
 
 @keyframes ringRotate {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .about-badge {
@@ -495,14 +524,20 @@ section {
     right: -8%;
     border-color: var(--main-color);
 }
-.badge-top i { color: var(--main-color); }
+
+.badge-top i {
+    color: var(--main-color);
+}
 
 .badge-bottom {
     bottom: 5%;
     left: -8%;
     border-color: var(--secondary-color);
 }
-.badge-bottom i { color: var(--secondary-color); }
+
+.badge-bottom i {
+    color: var(--secondary-color);
+}
 
 .about-content {
     display: flex;
@@ -850,7 +885,8 @@ section {
     gap: 1.5rem;
 }
 
-.input-box input, .input-group-2 textarea {
+.input-box input,
+.input-group-2 textarea {
     width: 100%;
     padding: 1.6rem;
     font-size: 1.5rem;
@@ -860,6 +896,12 @@ section {
     border-radius: 1.2rem;
     outline: none;
     transition: all 0.3s ease;
+}
+
+.input-box input:focus,
+.input-group-2 textarea:focus {
+    border-color: var(--main-color);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
 }
 
 .form-result-msg {
@@ -875,22 +917,17 @@ section {
 }
 
 .form-result-msg.success {
-    display: flex;
+    display: flex !important;
     background: rgba(16, 185, 129, 0.15);
     border: 1px solid rgba(16, 185, 129, 0.45);
     color: #10b981;
 }
 
 .form-result-msg.error {
-    display: flex;
+    display: flex !important;
     background: rgba(244, 63, 94, 0.15);
     border: 1px solid rgba(244, 63, 94, 0.45);
     color: #f43f5e;
-}
-
-.input-box input:focus, .input-group-2 textarea:focus {
-    border-color: var(--main-color);
-    box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
 }
 
 .submit-btn {
@@ -979,7 +1016,10 @@ section {
 }
 
 @media(max-width: 1200px) {
-    #menu-icon { display: block; }
+    #menu-icon {
+        display: block;
+    }
+
     .navbar {
         position: absolute;
         top: 100%;
@@ -994,11 +1034,43 @@ section {
         flex-direction: column;
         align-items: flex-start;
     }
-    .navbar.active { display: flex; }
-    .home, .about { flex-direction: column-reverse; text-align: center; justify-content: center; }
-    .home-content, .about-content { align-items: center; text-align: center; }
-    .home-content h1, .home-content h3, .home-content p, .about-content h3, .about-content p { text-align: center; }
-    .home-img img, .about-img-box img { width: 50vw; height: 50vw; }
-    .input-group { flex-direction: column; }
-    .btn-group { margin-left: 0; }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .home,
+    .about {
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .home-content,
+    .about-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-content h1,
+    .home-content h3,
+    .home-content p,
+    .about-content h3,
+    .about-content p {
+        text-align: center;
+    }
+
+    .home-img img,
+    .about-img-box img {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    .btn-group {
+        margin-left: 0;
+    }
 }
