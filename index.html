@@ -285,19 +285,28 @@
 
         <h2 class="heading reveal">Contact <span>Me</span></h2>
 
-        <form action="#" class="reveal contact-form">
+        <form action="https://api.web3forms.com/submit" method="POST" class="reveal contact-form" id="portfolio-contact-form">
+            <!-- Web3Forms Config for Direct Email Notification -->
+            <input type="hidden" name="access_key" value="7e199d98-8424-4f01-b258-005669b3f36a">
+            <input type="hidden" name="subject" value="🚀 New Contact Form Submission from Portfolio!">
+            <input type="hidden" name="from_name" value="Shobhit Shukla Portfolio">
+            <input type="hidden" name="replyto" value="shobhit.redmi10@gmail.com">
+
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name" required>
-                    <input type="email" placeholder="Email Address" required>
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
                 </div>
                 <div class="input-box">
-                    <input type="tel" placeholder="Phone Number">
-                    <input type="text" placeholder="Email Subject" required>
+                    <input type="tel" name="phone" placeholder="Phone Number">
+                    <input type="text" name="message_subject" placeholder="Email Subject" required>
                 </div>
             </div>
             <div class="input-group-2">
-                <textarea placeholder="Your Message..." cols="30" rows="7" required></textarea>
+                <textarea name="message" placeholder="Your Message..." cols="30" rows="7" required></textarea>
+                
+                <div id="form-result" class="form-result-msg"></div>
+
                 <button type="submit" class="btn primary-btn submit-btn">
                     <span>Send Message</span> <i class='bx bx-send'></i>
                 </button>

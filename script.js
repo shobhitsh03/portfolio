@@ -856,3 +856,57 @@ if (multipleTextSpan) {
 
     typeEffect();
 }
+
+// -------------------------------------------------------------
+// Contact Form AJAX Submission with Direct Email Notifications
+// -------------------------------------------------------------
+const contactForm = document.getElementById('portfolio-contact-form');
+const formResult = document.getElementById('form-result');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        const submitBtn = contactForm.querySelector('.submit-btn');
+        const originalBtnHTML = submitBtn.innerHTML;
+        submitBtn.innerHTML = "<span>Sending...</span> <i class='bx bx-loader-alt bx-spin'></i>";
+        submitBtn.disabled = true;
+
+        if (formResult) {
+            formResult.style.display = "none";
+            formResult.className = "form-result-msg";
+        }
+
+        const formData = new FormData(contactForm);
+
+        try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                if (formResult) {
+                    formResult.className = "form-result-msg success";
+                    formResult.innerHTML = "<i class='bx bx-check-circle'></i> Message sent successfully! Shobhit will receive your email notification shortly.";
+                }
+                contactForm.reset();
+            } else {
+                if (formResult) {
+                    formResult.className = "form-result-msg error";
+                    formResult.innerHTML = "<i class='bx bx-error-circle'></i> " + (data.message || "Something went wrong. Please try again.");
+                }
+            }
+        } catch (error) {
+            if (formResult) {
+                formResult.className = "form-result-msg error";
+                formResult.innerHTML = "<i class='bx bx-error-circle'></i> Connection error. Please check your internet connection.";
+            }
+        } finally {
+            submitBtn.innerHTML = originalBtnHTML;
+            submitBtn.disabled = false;
+        }
+    });
+}

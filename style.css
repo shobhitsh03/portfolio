@@ -862,6 +862,32 @@ section {
     transition: all 0.3s ease;
 }
 
+.form-result-msg {
+    display: none;
+    padding: 1.2rem 1.8rem;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    align-items: center;
+    gap: 0.8rem;
+    transition: 0.3s ease;
+}
+
+.form-result-msg.success {
+    display: flex;
+    background: rgba(16, 185, 129, 0.15);
+    border: 1px solid rgba(16, 185, 129, 0.45);
+    color: #10b981;
+}
+
+.form-result-msg.error {
+    display: flex;
+    background: rgba(244, 63, 94, 0.15);
+    border: 1px solid rgba(244, 63, 94, 0.45);
+    color: #f43f5e;
+}
+
 .input-box input:focus, .input-group-2 textarea:focus {
     border-color: var(--main-color);
     box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
