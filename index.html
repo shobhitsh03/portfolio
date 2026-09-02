@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shobhit Shukla - Web Developer Portfolio</title>
+    <link rel="stylesheet"  href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="scroll-progress-bar"></div>
+    <canvas id="particles-canvas"></canvas>
+
+    <header class="header">
+        <a href="#home" class="logo"> Shobhit <span>Shukla</span></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <a href="#contact"><button class="gradient-btn">Contact Me</button></a>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content reveal">
+            <h1>Hi, It's <span>Shobhit</span></h1>
+            <h3>
+                I'm a <span class="multiple-text"></span>
+            </h3>
+            <p>
+                Passionate software developer crafting high-performance, responsive web applications with modern design systems and intuitive user interfaces. Turning ideas into interactive digital experiences.
+            </p>
+
+            <div class="social-icons">
+                <a href="#" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="bx bxl-linkedin-square"></i></a>
+                <a href="#" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+
+                <div class="btn-group">
+                    <a href="#contact" class="btn">Hire Me</a>
+                    <a href="#projects" class="btn">View Work</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-img-wrapper reveal">
+            <div class="home-img">
+                <img src="Untitled design (1).png" alt="Shobhit Shukla Profile">
+                <div class="floating-badge badge-1"><i class='bx bx-code-alt'></i> Clean Code</div>
+                <div class="floating-badge badge-2"><i class='bx bxl-react'></i> Modern UI</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <canvas id="thor-lightning-canvas"></canvas>
+
+        <div class="about-img reveal">
+            <img src="Untitled design (1).png" alt="Shobhit Shukla About">
+        </div>
+
+        <div class="about-content reveal">
+            <h2>About <span>Me</span></h2>
+            <p>
+                I am a driven Web Developer focused on building clean, efficient, and scalable web solutions. With expertise across frontend technologies and backend frameworks, I enjoy solving complex problems, writing maintainable code, and creating modern visual aesthetics that delight users.
+            </p>
+            <div class="about-info-cards">
+                <div class="info-card">
+                    <i class='bx bx-briefcase-alt-2'></i>
+                    <h4>3+ Years</h4>
+                    <p>Development Experience</p>
+                </div>
+                <div class="info-card">
+                    <i class='bx bx-folder-open'></i>
+                    <h4>15+</h4>
+                    <p>Projects Completed</p>
+                </div>
+            </div>
+            <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="heading reveal">My <span>Skills</span></h2>
+
+        <div class="skills-container">
+            <div class="skill-box reveal">
+                <div class="skill-info">
+                    <i class="bx bxl-html5"></i>
+                    <div class="skill-header">
+                        <h4>HTML5</h4>
+                        <span class="skill-percent">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="95%" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-box reveal">
+                <div class="skill-info">
+                    <i class="bx bxl-css3"></i>
+                    <div class="skill-header">
+                        <h4>CSS3</h4>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="90%" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-box reveal">
+                <div class="skill-info">
+                    <i class="bx bxl-javascript"></i>
+                    <div class="skill-header">
+                        <h4>JavaScript</h4>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="85%" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-box reveal">
+                <div class="skill-info">
+                    <i class="bx bxl-react"></i>
+                    <div class="skill-header">
+                        <h4>React</h4>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="80%" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-box reveal">
+                <div class="skill-info">
+                    <i class="bx bxl-nodejs"></i>
+                    <div class="skill-header">
+                        <h4>Node.js</h4>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="75%" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-box reveal">
+                <div class="skill-info">
+                    <i class="bx bxl-python"></i>
+                    <div class="skill-header">
+                        <h4>Python</h4>
+                        <span class="skill-percent">70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="70%" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading reveal">Services</h2>
+
+        <div class="services-container">
+            <div class="service-box reveal">
+                <div class="service-info">
+                    <i class="bx bx-code-alt"></i>
+                    <h4>Frontend Development</h4>
+                    <p>Building dynamic, responsive, and cross-browser web interfaces utilizing HTML5, CSS3, JavaScript, and React with smooth animations and intuitive UX patterns.</p>
+                </div>
+            </div>
+            <div class="service-box reveal">
+                <div class="service-info">
+                    <i class="bx bx-server"></i>
+                    <h4>Backend Development</h4>
+                    <p>Designing robust REST APIs, server-side algorithms, database architectures, and scalable web backend services with Node.js and Express.</p>
+                </div>
+            </div>
+            <div class="service-box reveal">
+                <div class="service-info">
+                    <i class="bx bx-palette"></i>
+                    <h4>UI/UX & Web Optimization</h4>
+                    <p>Creating clean component designs, responsive grid layouts, lightning-fast web performance, and engaging visual animations tailored for modern web users.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading reveal">Featured <span>Projects</span></h2>
+        <div class="project-box">
+            <div class="project-card reveal">
+                <div class="project-img-box">
+                    <img src="project1.png" alt="Smart Timetable Generator">
+                </div>
+                <h3>Timetable Generator App</h3>
+                <p>An intelligent automated schedule generation platform with dynamic slot conflict detection, matrix views, and PDF/CSV export tools.</p>
+                <a href="#" class="btn project-btn">View Demo <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-img-box">
+                    <img src="project2.png" alt="Interactive Dashboard">
+                </div>
+                <h3>Analytics Dashboard</h3>
+                <p>Comprehensive data visualization dashboard featuring live interactive charts, theme switching, and real-time user metrics.</p>
+                <a href="#" class="btn project-btn">View Demo <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-img-box">
+                    <img src="project3.png" alt="Full Stack E-Commerce">
+                </div>
+                <h3>E-Commerce Web App</h3>
+                <p>Modern online store application complete with product search filtering, shopping cart drawer, and seamless checkout interface.</p>
+                <a href="#" class="btn project-btn">View Demo <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-img-box">
+                    <img src="project4.png" alt="Developer Portfolio">
+                </div>
+                <h3>Interactive Portfolio</h3>
+                <p>Ultra-fast dark-themed portfolio website with dynamic canvas particle backgrounds, smooth scroll reveals, and micro-interactions.</p>
+                <a href="#" class="btn project-btn">View Demo <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading reveal">Contact <span>Me</span></h2>
+        <form action="#" class="reveal">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-box">
+                    <input type="tel" placeholder="Phone Number">
+                    <input type="text" placeholder="Email Subject" required>
+                </div>
+            </div>
+            <div class="input-group-2">
+                <textarea placeholder="Your Message..." cols="30" rows="8" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bx bxl-linkedin-square"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+        </div>
+
+        <ul class="list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <p class="copyright">
+            © Shobhit Shukla | All Rights Reserved
+        </p>
+    </footer>
+
+    <a href="#home" class="scroll-top-btn" aria-label="Scroll to top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
