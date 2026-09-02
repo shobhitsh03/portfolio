@@ -880,28 +880,34 @@ if (contactForm) {
         const formData = new FormData(contactForm);
 
         try {
-            const response = await fetch('https://api.web3forms.com/submit', {
+            const response = await fetch('https://formsubmit.co/ajax/shobhit.redmi10@gmail.com', {
                 method: 'POST',
-                body: formData
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
             });
 
             const data = await response.json();
 
-            if (data.success) {
+            if (response.ok || data.success === "true" || data.success === true) {
                 if (formResult) {
                     formResult.className = "form-result-msg success";
+                    formResult.style.display = "flex";
                     formResult.innerHTML = "<i class='bx bx-check-circle'></i> Message sent successfully! Shobhit will receive your email notification shortly.";
                 }
                 contactForm.reset();
             } else {
                 if (formResult) {
                     formResult.className = "form-result-msg error";
+                    formResult.style.display = "flex";
                     formResult.innerHTML = "<i class='bx bx-error-circle'></i> " + (data.message || "Something went wrong. Please try again.");
                 }
             }
         } catch (error) {
             if (formResult) {
                 formResult.className = "form-result-msg error";
+                formResult.style.display = "flex";
                 formResult.innerHTML = "<i class='bx bx-error-circle'></i> Connection error. Please check your internet connection.";
             }
         } finally {
