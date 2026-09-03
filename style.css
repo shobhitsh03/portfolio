@@ -300,67 +300,7 @@ section {
     box-shadow: 0 0 30px rgba(0, 240, 255, 0.6);
 }
 
-/* Meteor Defense Arcade HUD */
-.meteor-game-hud {
-    position: absolute;
-    bottom: 20px;
-    left: 8%;
-    z-index: 15;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    background: rgba(15, 23, 42, 0.85);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(0, 240, 255, 0.35);
-    padding: 6px 16px;
-    border-radius: 25px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 240, 255, 0.2);
-}
 
-.hud-stat {
-    color: #f8fafc;
-    font-size: 1.2rem;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.hud-stat i {
-    color: #00f0ff;
-    font-size: 1.5rem;
-}
-
-.hud-stat strong {
-    color: #00f0ff;
-    font-size: 1.3rem;
-}
-
-.hud-btn {
-    background: linear-gradient(135deg, #00f0ff, #3b82f6);
-    color: #050b14;
-    border: none;
-    padding: 5px 14px;
-    border-radius: 16px;
-    font-weight: 700;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.hud-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0 15px rgba(0, 240, 255, 0.8);
-}
-
-@media (max-width: 768px) {
-    .meteor-game-hud {
-        display: none !important;
-    }
-}
 
 .home-img-wrapper {
     position: relative;
