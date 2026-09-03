@@ -1020,6 +1020,11 @@ section {
         display: block;
     }
 
+    .header .gradient-btn,
+    .header a[href="#contact"] {
+        display: none;
+    }
+
     .navbar {
         position: absolute;
         top: 100%;
