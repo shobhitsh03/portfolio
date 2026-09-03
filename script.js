@@ -276,7 +276,7 @@ if (homeCanvas && homeSection) {
     let activeMeteors = [];
     let meteorDebris = [];
     let meteorScore = 0;
-    let isMeteorGameActive = true;
+    let isMeteorGameActive = false;
     let lastMeteorSpawnTime = 0;
     let homeMouse = { x: 0, y: 0, isHovered: false };
 
@@ -288,9 +288,9 @@ if (homeCanvas && homeSection) {
             e.stopPropagation();
             isMeteorGameActive = !isMeteorGameActive;
             if (isMeteorGameActive) {
-                gameToggleBtn.innerHTML = "<i class='bx bx-pause'></i> Pause Defense";
+                gameToggleBtn.innerHTML = "<i class='bx bx-pause'></i> Pause";
             } else {
-                gameToggleBtn.innerHTML = "<i class='bx bx-play'></i> Play Meteor Defense";
+                gameToggleBtn.innerHTML = "<i class='bx bx-play'></i> Play";
             }
         };
     }
