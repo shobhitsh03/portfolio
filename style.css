@@ -358,30 +358,7 @@ section {
 
 @media (max-width: 768px) {
     .meteor-game-hud {
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 12px;
-        padding: 5px 12px;
-        gap: 8px;
-        border-radius: 20px;
-    }
-
-    .hud-stat {
-        font-size: 1.0rem;
-    }
-
-    .hud-stat i {
-        font-size: 1.2rem;
-    }
-
-    .hud-stat strong {
-        font-size: 1.1rem;
-    }
-
-    .hud-btn {
-        padding: 4px 10px;
-        font-size: 1.0rem;
-        border-radius: 12px;
+        display: none !important;
     }
 }
 
